@@ -78,9 +78,9 @@ pipeline {
                 script {
                     echo "Deploying application using docker-compose..."
                     sh """
-                        docker compose pull
-                        docker compose down
-                        docker compose up -d
+                        docker-compose pull
+                        docker-compose down
+                        docker-compose up -d
                     """
                 }
             }
